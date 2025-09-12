@@ -45,6 +45,7 @@ Pour NeuroGrid, je recommande une **architecture hybride** qui adapte le protoco
 
 ### **NeuroGrid-Core (Serveur Central)**
 
+'''
 ┌─────────────────┐
 │ NeuroGrid-Core  │
 ├─────────────────┤
@@ -54,6 +55,7 @@ Pour NeuroGrid, je recommande une **architecture hybride** qui adapte le protoco
 │ SSH Server      │ ← Terminal authentique
 │ Database        │ ← Persistance des données
 └─────────────────┘
+'''
 
 ### **Communication par Client**
 
