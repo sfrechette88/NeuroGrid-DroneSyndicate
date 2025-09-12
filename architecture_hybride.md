@@ -45,7 +45,7 @@ Pour NeuroGrid, je recommande une **architecture hybride** qui adapte le protoco
 
 ### **NeuroGrid-Core (Serveur Central)**
 
-'''
+```
 ┌─────────────────┐
 │ NeuroGrid-Core  │
 ├─────────────────┤
@@ -55,7 +55,7 @@ Pour NeuroGrid, je recommande une **architecture hybride** qui adapte le protoco
 │ SSH Server      │ ← Terminal authentique
 │ Database        │ ← Persistance des données
 └─────────────────┘
-'''
+```
 
 ### **Communication par Client**
 
@@ -76,7 +76,7 @@ Pour NeuroGrid, je recommande une **architecture hybride** qui adapte le protoco
 ### **🖥️ NeuroGrid-Terminal (SSH)**
 
 #### **SSH uniquement - Session Persistante**
-Terminal ←─────SSH─────→ Core
+Terminal <─────SSH─────> Core
 (Port 22/2222)
 
 **Interactions SSH :**
@@ -95,12 +95,12 @@ $ neurogrid drone list
 #### **Approche Hybride : REST + WebSockets**
 
 **REST API** (Actions Structure) :
-DMS ─────HTTPS────→ Core/api/v1/
-←────JSON─────
+DMS ─────HTTPS────> Core/api/v1/
+<────JSON─────
 
 **WebSockets** (Temps Réel) :
-DMS ←────WSS─────→ Core/ws/dms
-←───Events───→
+DMS <────WSS─────> Core/ws/dms
+<───Events───>
 
 #### **Répartition REST vs WebSocket :**
 
@@ -125,12 +125,12 @@ DMS ←────WSS─────→ Core/ws/dms
 #### **Approche Hybride : REST + WebSockets**
 
 **REST API** (Données Statiques) :
-Browser ─────HTTPS────→ Core/api/v1/
-←────JSON─────
+Browser ─────HTTPS────> Core/api/v1/
+<────JSON─────
 
 **WebSockets** (NeuroLink Temps Réel) :
-Browser ←────WSS─────→ Core/ws/neurolink
-←───Events───→
+Browser <────WSS─────> Core/ws/neurolink
+<───Events───>
 
 #### **Répartition REST vs WebSocket :**
 
