@@ -1,10 +1,10 @@
 ## Arborescence de localisation
 
-Métropole : une seule, NeuroGrid
-Districts : 1 Métropole comporte 16 Districts
-Secteurs : 1 District comporte 16 Secteurs
-Quartiers : 1 Secteur comporte 16 Quartiers
-Blocs : 1 Quartir comporte 16 Blocs
+[] Métropole : une seule, NeuroGrid
+[] Districts : 1 Métropole comporte 16 Districts
+[] Secteurs : 1 District comporte 16 Secteurs
+[] Quartiers : 1 Secteur comporte 16 Quartiers
+[] Blocs : 1 Quartir comporte 16 Blocs
 
 Pour adresser chaque localisation, on utilise la notation hexadécimale.
 Le premier Disctrict sera 0x0, le deuxième 0x1, etc..
